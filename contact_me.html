@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Harish's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact-section {
+            padding: 100px 40px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            color: #ff4d4d;
+            margin-bottom: 20px;
+        }
+
+        .contact-section p {
+            margin-bottom: 40px;
+            color: #999999;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            background-color: #1a1a1a;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: black;
+            border: 2px solid #ff4d4d;
+            border-radius: 8px;
+            color: white;
+            font-size: 1rem;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: #ff0000;
+        }
+
+        .contact-form button {
+            padding: 12px 24px;
+            background: #ff4d4d;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+
+        .contact-form button:hover {
+            background-color: black;
+            color: #ff4d4d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="contact-section">
+        <h2>Contact Me</h2>
+        <p>Feel free to get in touch using the form below!</p>
+
+        <form class="contact-form" onsubmit="sendEmail(); return false;">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="text" id="subject" placeholder="Subject" required>
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script>
+        function sendEmail() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            // Encode the mailto link to make sure all characters are handled properly
+            const mailtoLink = `mailto:hk80134@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+                'Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message
+            )}`;
+
+            // Open the user's email client
+            window.location.href = mailtoLink;
+        }
+    </script>
+</body>
+
+</html>

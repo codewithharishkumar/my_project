@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Harish's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: #1a1a1a;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ff4d4d;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: #ff0000;
+            font-size: 1.05rem;
+        }
+
+        main {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .services-section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+        }
+
+        .services-section h1 {
+            font-size: 2.5rem;
+            color: #ff4d4d;
+            margin-bottom: 40px;
+        }
+
+        .services-box {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .service-card {
+            flex: 1;
+            max-width: 300px;
+            background-color: #111;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: #ff4d4d;
+            margin-bottom: 15px;
+        }
+
+        .service-title {
+            color: #ff4d4d;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .service-desc {
+            color: #999;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .services-box {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Harish's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact_me.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services-section">
+            <h1>My Services</h1>
+            <div class="services-box">
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h2 class="service-title">Web Development</h2>
+                    <p class="service-desc">
+                        I build responsive, fast, and visually appealing websites tailored to your business needs using the latest technologies.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h2 class="service-title">UI/UX Design</h2>
+                    <p class="service-desc">
+                        I create intuitive user interfaces that ensure a seamless user experience, blending aesthetics with usability.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h2 class="service-title">Backend Development</h2>
+                    <p class="service-desc">
+                        I specialize in server-side programming, building robust backend systems with Node.js, Express, and MongoDB.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h2 class="service-title">Mobile App Development</h2>
+                    <p class="service-desc">
+                        I develop mobile-friendly web applications that work seamlessly across all platforms and devices.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        © 2024 Harish's Portfolio. All Rights Reserved.
+    </footer>
+</body>
+
+</html>
