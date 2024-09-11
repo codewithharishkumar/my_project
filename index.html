@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harish - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: #1a1a1a;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ff4d4d;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: #ff0000;
+            font-size: 1.05rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: #ff4d4d;
+            height: 1.5px;
+            margin: 40px 80px;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 80px 0;
+            padding: 0 40px;
+        }
+
+        .firstsection>div {
+            width: 45%;
+        }
+
+        .leftsection {
+            font-size: 2.5rem;
+            line-height: 1.2;
+        }
+
+        .leftsection .buttons {
+            margin-top: 20px;
+        }
+
+        .leftsection .btn {
+            padding: 12px 24px;
+            background: #ff4d4d;
+            color: white;
+            border: 2px solid #ff4d4d;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+
+        .leftsection .btn:hover {
+            background-color: black;
+            color: #ff4d4d;
+        }
+
+        .rightsection img {
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+        }
+
+        .purple {
+            color: #ff4d4d;
+        }
+
+        .text-gray {
+            color: #999999;
+        }
+
+        #element {
+            color: #ff4d4d;
+            text-shadow: 0 0 8px rgba(255, 0, 0, 0.8);
+        }
+
+        /* Work experience section */
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondsection .box {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .secondsection .vertical {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            background-color: #1a1a1a;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .secondsection .vertical:hover {
+            transform: scale(1.05);
+        }
+
+        .secondsection .image-top {
+            width: 30px;
+            filter: brightness(150%);
+        }
+
+        .vertical-tittle {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #ff4d4d;
+        }
+
+        .vertical-desc {
+            color: #999999;
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+           
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 1024px) {
+            .firstsection {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .firstsection>div {
+                width: 80%;
+            }
+
+            .leftsection {
+                text-align: center;
+            }
+
+            .rightsection img {
+                width: 60%;
+            }
+
+            .secondsection .vertical {
+                flex-basis: 45%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .leftsection {
+                font-size: 2rem;
+            }
+
+            .rightsection img {
+                width: 70%;
+            }
+
+            .secondsection .vertical {
+                flex-basis: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .leftsection {
+                font-size: 1.5rem;
+            }
+
+            .rightsection img {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Harish's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact_me.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Harish</span>
+
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+
+                <div class="buttons">
+                    <a href="123.pdf" class="btn" download="Harish_Resume.pdf">Download Resume</a>
+                    <a href="https://github.com/codewithharishkumar" target="_blank" class="btn">Visit GitHub</a>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="1.png" alt="">
+                    <div class="vertical-tittle">Html Developer (2005-2010)</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="2.png" alt="">
+                    <div class="vertical-tittle">Css Developer (2011-2012)</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="3.png" alt="">
+                    <div class="vertical-tittle">JavaScript Developer (2012-2013)</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="4.png" alt="">
+                    <div class="vertical-tittle">Mongo DB Developer (2014-2018)</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="5.png" alt="">
+                    <div class="vertical-tittle">Instagram Developer (2014-2018)</div>
+                    <div class="vertical-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+   
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Frontend Enthusiast', 'Backend Developer', 'Full-Stack Developer'],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
